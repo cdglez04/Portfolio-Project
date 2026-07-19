@@ -1,0 +1,155 @@
+.pf-footer {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  text-align: left;
+}
+
+.pf-footer-intro {
+  flex: 1;
+  min-width: 0;
+  padding-top: 8px;
+}
+
+.pf-footer-intro h2 {
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  margin: 0 0 12px;
+}
+
+.pf-footer-sub {
+  color: var(--text);
+  font-size: 18px;
+  margin: 0 0 32px;
+}
+
+.pf-footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.pf-footer-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-h);
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.pf-footer-email:hover {
+  color: var(--highlight);
+}
+
+.pf-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pf-footer-form {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pf-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pf-form-row label {
+  color: var(--text-h);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pf-form-row input,
+.pf-form-row textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font: inherit;
+  font-size: 15px;
+  padding: 12px 14px;
+  transition: border-color 0.2s ease;
+}
+
+.pf-form-row input::placeholder,
+.pf-form-row textarea::placeholder {
+  color: var(--text);
+}
+
+.pf-form-row input:focus,
+.pf-form-row textarea:focus {
+  outline: none;
+  border-color: var(--highlight-border);
+}
+
+.pf-form-row textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.pf-form-submit {
+  align-self: flex-start;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--highlight);
+  color: var(--bg);
+  font-weight: 500;
+  font-size: 15px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.pf-form-submit:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.pf-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pf-form-status {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pf-form-status-success {
+  color: var(--highlight);
+}
+
+.pf-form-status-error {
+  color: #f87171;
+}
+
+@media (max-width: 1024px) {
+  .pf-footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 48px 24px 64px;
+  }
+
+  .pf-footer-intro h2 {
+    font-size: 32px;
+  }
+
+  .pf-form-submit {
+    align-self: stretch;
+  }
+}

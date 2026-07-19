@@ -1,0 +1,71 @@
+.pf-skills {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+
+.pf-skills > h2 {
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.pf-skills-group {
+  margin-bottom: 40px;
+}
+
+.pf-skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.pf-skills-group > h3 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.pf-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.pf-skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-size: 15px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pf-skill-chip:hover {
+  border-color: var(--highlight-border);
+  transform: translateY(-4px);
+}
+
+.pf-skill-icon {
+  color: var(--highlight);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .pf-skills {
+    padding: 48px 24px;
+  }
+
+  .pf-skills > h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+}
