@@ -7,7 +7,7 @@ export function Hero() {
     <section className="pf-hero relative w-full overflow-hidden rounded-xl">
       <div className="pf-hero-content">
         <div className="pf-hero-copy">
-          <h1>Hi, I'm <span>Carlos Daniel !</span></h1>
+          <h1>Hi, I'm <span>Carlos Daniel </span>!</h1>
           <p>Full-stack developer & CS student at HCC. I build web applications <br />
            end-to-end — clean frontends, solid backends, and everything in between. Currently taking on freelance projects while sharpening <br /> my skills in the classroom.</p>
           <div className="pf-hero-actions">
@@ -36,7 +36,7 @@ export function Hero() {
             >
               <MailIcon width={20} height={20} />
             </a>
-            <a href="/resume.pdf" download className="pf-resume-btn">
+            <a href="/cd_resume.pdf" download className="pf-resume-btn">
               <DownloadIcon width={18} height={18} />
               Download Resume
             </a>
