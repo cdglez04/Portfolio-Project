@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "vantalinks",
     name: "VantaLinks",
-    image: "public/projects/vantalinks-project.png",
+    image: "/projects/vantalinks-project.png",
     link: "https://vantalinks.vercel.app/",
     category: "fullstack",
     stack: ["Vite", "React", "JavaScript", "Python","Django", "PostgreSQL"],
@@ -18,7 +18,7 @@ export const projects = [
   {
     id: "cuba-yo",
     name: "Cuba Yo",
-    image: "public/projects/cubayo-project.png",
+    image: "/projects/cubayo-project.png",
     link: "https://cuba-yo.com",
     category: "frontend",
     stack: ["Vite", "JavaScript", "React"],
