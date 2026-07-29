@@ -1,0 +1,94 @@
+.pf-how-we-work {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+
+.pf-how-we-work > h2 {
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.pf-how-we-work-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-how-we-work-step {
+  display: flex;
+  gap: 24px;
+  text-align: left;
+}
+
+.pf-how-we-work-marker {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pf-how-we-work-marker span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--highlight-bg);
+  border: 1px solid var(--highlight-border);
+  color: var(--highlight);
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pf-how-we-work-step:not(:last-child) .pf-how-we-work-marker::after {
+  content: "";
+  flex: 1;
+  width: 2px;
+  min-height: 32px;
+  margin: 4px 0;
+  background: var(--border);
+}
+
+.pf-how-we-work-content {
+  padding-bottom: 32px;
+}
+
+.pf-how-we-work-step:last-child .pf-how-we-work-content {
+  padding-bottom: 0;
+}
+
+.pf-how-we-work-content h3 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+  font-size: 18px;
+  margin: 6px 0 8px;
+}
+
+.pf-how-we-work-content p {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 150%;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .pf-how-we-work {
+    padding: 48px 24px;
+  }
+
+  .pf-how-we-work > h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  .pf-how-we-work-step {
+    gap: 16px;
+  }
+}

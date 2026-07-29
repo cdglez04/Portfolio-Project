@@ -1,0 +1,127 @@
+.pf-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+}
+
+.pf-navbar-scrolled {
+  background: rgba(22, 23, 29, 0.72);
+  backdrop-filter: blur(10px);
+  border-bottom-color: var(--border);
+}
+
+.pf-navbar-inner {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: var(--navbar-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pf-navbar-brand {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.pf-navbar-brand img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.pf-navbar-brand:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.pf-navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.pf-navbar-links a {
+  color: var(--text);
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.pf-navbar-links a:hover {
+  color: var(--highlight);
+}
+
+.pf-navbar-links a.pf-navbar-services {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--highlight-border);
+  background: var(--highlight-bg);
+  color: var(--highlight);
+  font-weight: 500;
+}
+
+.pf-navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+}
+
+.pf-navbar-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--text-h);
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .pf-navbar-inner {
+    padding: 0 24px;
+  }
+
+  .pf-navbar-toggle {
+    display: flex;
+  }
+
+  .pf-navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .pf-navbar-links-open {
+    max-height: 320px;
+  }
+
+  .pf-navbar-links a {
+    padding: 14px 24px;
+    border-top: 1px solid var(--border);
+    text-align: left;
+  }
+
+  .pf-navbar-links a.pf-navbar-services {
+    margin: 12px 24px;
+    border-top: 1px solid var(--highlight-border);
+    text-align: center;
+  }
+}

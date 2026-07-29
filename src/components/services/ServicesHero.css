@@ -1,0 +1,125 @@
+.pf-services-hero {
+  width: 100%;
+  max-width: 720px;
+  min-height: calc(100svh - var(--navbar-h));
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.pf-services-hero h1 {
+  font-size: 64px;
+  letter-spacing: -1.92px;
+  margin: 0;
+}
+
+.pf-services-hero p {
+  color: var(--text);
+  font-size: 22px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.pf-services-hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  max-width: 560px;
+}
+
+.pf-services-hero-highlights li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--social-bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-size: 14px;
+}
+
+.pf-services-hero-highlights li svg {
+  flex-shrink: 0;
+  color: var(--highlight);
+}
+
+.pf-services-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.pf-services-hero-btn {
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.pf-services-hero-btn-primary {
+  background: var(--highlight);
+  color: var(--bg);
+}
+
+.pf-services-hero-btn-primary:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.pf-services-hero-btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-h);
+}
+
+.pf-services-hero-btn-secondary:hover {
+  border-color: var(--highlight-border);
+  color: var(--highlight);
+  transform: translateY(-2px);
+}
+
+.pf-services-hero-work-link {
+  color: var(--text);
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.pf-services-hero-work-link:hover {
+  color: var(--highlight);
+}
+
+@media (max-width: 1024px) {
+  .pf-services-hero {
+    padding: 56px 24px;
+  }
+
+  .pf-services-hero h1 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .pf-services-hero p {
+    font-size: 18px;
+  }
+
+  .pf-services-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 280px;
+  }
+}

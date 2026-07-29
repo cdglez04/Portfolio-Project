@@ -59,7 +59,7 @@ export function Projects() {
   const fullStackProjects = allProjects.filter((project) => project.category === "fullstack")
 
   return (
-    <section className="pf-projects">
+    <section id="projects" className="pf-projects">
       <h2>Projects</h2>
 
       <ProjectGroup title="Full Stack" items={fullStackProjects} />

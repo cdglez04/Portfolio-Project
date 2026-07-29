@@ -3,7 +3,7 @@ import { skills } from "@/data/skills"
 
 export function Skills() {
   return (
-    <section className="pf-skills">
+    <section id="skills" className="pf-skills">
       <h2>Skills</h2>
       {skills.map((group) => (
         <div className="pf-skills-group" key={group.category}>

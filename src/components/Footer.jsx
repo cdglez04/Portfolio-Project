@@ -39,7 +39,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="pf-footer">
+    <footer id="contact" className="pf-footer">
       <div className="pf-footer-intro">
         <h2>Let's build something together?</h2>
         <p className="pf-footer-sub">

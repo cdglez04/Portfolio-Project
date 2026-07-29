@@ -2,7 +2,7 @@ import "./About.css"
 
 export function About() {
   return (
-    <section className="pf-about">
+    <section id="about" className="pf-about">
       <h2>About me</h2>
       <div className="pf-about-content">
         <p>
