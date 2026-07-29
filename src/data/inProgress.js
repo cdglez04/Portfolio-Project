@@ -2,7 +2,7 @@ export const inProgressProjects = [
   {
     id: "lucdex",
     name: "Lucdex",
-    image: "/src/assets/lucdex-project.png",
+    image: "/public/projects/lucdex-project.png",
     link: "https://github.com/cdglez04/Lucdex-",
     category: "fullstack",
     stack: ["React", "Vite", "JavaScript", "Python", "Django", "PostgreSQL"],
